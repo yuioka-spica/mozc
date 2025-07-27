@@ -54,7 +54,6 @@ def get_vcvarsall(
     FileNotFoundError: When 'vcvarsall.bat' cannot be found.
     ChildProcessError: When 'vcvarsall.bat' cannot be executed.
   """
-  return pathlib.Path(r'C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvarsall.bat').resolve()
   if path_hint is not None:
     path = pathlib.Path(path_hint).resolve()
     if path.exists():
